@@ -1,0 +1,136 @@
+@charset "utf-8";
+.link2 {
+  position: relative;
+  box-sizing: border-box;
+  height: 600px ;
+}
+.link2 .left {
+  position: relative;
+  top: 100px;
+  font-size: 16px;
+  width: 50%;
+  padding-left: 30px ;
+  padding-right: 70px ;
+  color: #000;
+}
+.link2 .left div {
+  float: right;
+}
+.link2 .left div h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.3em;
+}
+.link2 .left div p {
+  font-size: 1em;
+  line-height: 2em;
+}
+.link2 .left div button {
+  background: #06f;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  height: 48px;
+  line-height: 48px;
+  outline: none;
+  text-align: center;
+  width: 152px;
+  display: block;
+}
+.link2 .right {
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  top: 15%;
+}
+.link2 .right .link2_content {
+  width: 100%;
+  max-width: 476px;
+  height: 404px;
+  box-shadow: 0 0 34px 0 rgba(3, 65, 157, 0.1);
+}
+.link2 .right .link2_content .nav-tabs li {
+  width: 33.1%;
+}
+.link2 .right .link2_content .nav-tabs li:nth-of-type(2) {
+  margin-left: 1px;
+}
+.link2 .right .link2_content .nav-tabs li:nth-of-type(3) {
+  margin-left: 1px;
+}
+.link2 .right .link2_content .nav-tabs li a {
+  border-radius: 0px;
+  border: none;
+  background-color: #dadfe6;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0px;
+}
+.link2 .right .link2_content .nav-tabs li.active a {
+  background-color: white;
+}
+.link2 .right .link2_content img {
+  width: 100%;
+}
+@media screen and (max-width: 1022px) {
+  .link2 .left {
+    font-size: 11px;
+    padding-left: 20px;
+  }
+  .link2 .left div {
+    float: left;
+  }
+  .link2 .left h1 {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 768px) {
+  .link2 {
+    height: 680px;
+  }
+  .link2 .left {
+    width: 100%;
+    table-layout: fixed;
+    position: absolute;
+    top: 0px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+  .link2 .left div {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    max-width: 480px ;
+    width: 100%;
+    text-align: center;
+  }
+  .link2 .left div br {
+    display: none;
+  }
+  .link2 .left div p {
+    text-align: left;
+  }
+  .link2 .left div button {
+    position: absolute;
+    margin-top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .link2 .right {
+    width: 100%;
+    position: absolute;
+    top: 170px;
+  }
+  .link2 .right .link2_content {
+    margin: 20px auto;
+    height: auto ;
+    max-width: 480px ;
+    width: 95%;
+  }
+}

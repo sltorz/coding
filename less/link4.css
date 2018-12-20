@@ -1,0 +1,41 @@
+@charset "utf-8";
+.link4 {
+  padding: 70px 15px;
+  font-size: 16px;
+}
+.link4 .top {
+  margin-bottom: 50px ;
+}
+.link4 .top .link4_top_content {
+  text-align: center;
+  color: black;
+}
+.link4 .top .link4_top_content h1 {
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+.link4 .top .link4_top_content p a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #06f;
+}
+.link4 .bottom {
+  text-align: center;
+}
+.link4 .bottom img {
+  width: 100%;
+  max-width: 839px;
+}
+@media screen and (max-width: 1022px) {
+  .link4 {
+    font-size: 12px;
+    padding: 30px 15px;
+  }
+  .link4 .link4_top_content p {
+    line-height: 22px;
+    margin-bottom: 0px;
+  }
+}

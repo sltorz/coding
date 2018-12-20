@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import "variables.less";
+
+.kf{
+  display: block;
+  width:100%;
+  height: 2.05rem;
+  position: relative;
+  margin-top: 0.4rem;
+
+  .kf_title{
+    color: #202d40;
+    font-size: 0.38rem;
+    font-weight: 500;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .kf_contain{
+    display: block;
+    width: 100%;
+   text-align: center;
+    margin: 0 auto;
+   >div{
+     position: relative;
+     font-size: 0.15rem;
+      display: inline-block;
+     cursor: pointer;
+     color: #606c80;
+     font-weight: 700;
+     text-align: center;
+     padding: 0 45px;
+&:nth-child(3):hover{
+.ewm1{
+  opacity: 1;
+}
+}
+     &:nth-child(4):hover{
+.ewm2{
+opacity: 1;
+}
+     }
+
+.ewm1,.ewm2{
+  transition:all 0.4s;
+ opacity: 0;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top:-130px;
+  left: 35px;
+}
+    }
+  }
+
+}
+
+@media screen and(max-width:875px ){
+
+}
+

@@ -1,0 +1,26 @@
+.sn_nav {
+  width: 100%;
+  padding: 0.1rem 0.1rem;
+  border-bottom: 1px solid #ccc;
+}
+.sn_nav ul {
+  overflow: hidden;
+}
+.sn_nav ul li {
+  float: left;
+  width: 20%;
+}
+.sn_nav ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.sn_nav ul li a img {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: inline-block;
+}
+.sn_nav ul li a p {
+  font-size: 0.2rem;
+  text-align: center;
+}

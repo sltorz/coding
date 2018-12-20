@@ -1,0 +1,109 @@
+@charset "utf-8";
+.coding_contain {
+  position: relative;
+}
+.coding_contain .body {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(0deg, #3a0680, #250c54);
+}
+.coding_contain .body .bac1 {
+  margin: 15px 40px;
+  height: 560px;
+  float: right;
+}
+@media screen and (max-width: 1022px) {
+  .coding_contain .body .bac1 {
+    margin: 15px -50px;
+    height: 560px;
+  }
+}
+@media screen and (max-width: 622px) {
+  .coding_contain .body .bac1 {
+    height: 320px;
+    margin: 270px -85px 20px;
+  }
+}
+.coding_contain .text {
+  position: absolute;
+  top: 130px;
+  left: 220px;
+  width: 530px;
+  height: 400px;
+}
+.coding_contain .text p {
+  margin: 0px 0px;
+}
+.coding_contain .text a {
+  color: #fff;
+  text-decoration: none;
+}
+.coding_contain .text a:first-of-type p {
+  font-size: 32px;
+  line-height: 32px;
+}
+.coding_contain .text a:nth-of-type(2) p {
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 68px;
+}
+.coding_contain .text a:nth-of-type(3) p {
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 68px;
+}
+.coding_contain .text a:nth-of-type(4) p {
+  font-size: 16px;
+  margin: 40px 0px;
+}
+.coding_contain .text a:nth-of-type(5) {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  background-color: #06f;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1022px) {
+  .coding_contain .text {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 622px) {
+  .coding_contain .text {
+    width: 300px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  .coding_contain .text a:first-of-type p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .coding_contain .text a:nth-of-type(2) p {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .coding_contain .text a:nth-of-type(3) p {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+  }
+  .coding_contain .text a:nth-of-type(4) p {
+    font-size: 16px;
+    margin: 40px 0px;
+  }
+  .coding_contain .text a:nth-of-type(5) {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: #06f;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+  }
+}

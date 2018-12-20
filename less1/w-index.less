@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+.layout{
+  .layout-content{
+    display: table;
+    height: 100%;
+    padding: 4rem 0;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .layout-cell{
+    display: table-cell;
+    overflow: hidden;
+    table-layout: fixed;
+    &.vertical-middle{
+      vertical-align: middle;
+    }
+  }
+}
+.text-cell{
+  width: 400px;
+}
+.text-content{
+  h1{
+    font-size: 2.57rem;
+    line-height: 3.57rem;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: 1.14rem;
+    line-height: 2rem;
+  }
+  &.align-center{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+.left-cell{
+  .text-content{
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+}
+.right-cell{
+  .text-content{
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+}
+.light-bg{
+  background: #f7fcff;
+}
+.section-content{
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1112px;
+  position: relative;
+}
+.banner-section{
+  background-image: linear-gradient(-180deg,#408cff,#66a3ff);
+  height: 600px;
+  .banner-bg{
+    background: url(https://dn-coding-net-production-pp.codehub.cn/d7fa9828-e106-4b73-aa74-2fc34496e949.png) no-repeat 0 100%,url(https://dn-coding-net-production-pp.codehub.cn/c091f40f-a9df-4d6d-b687-a8fb3e314061.png) no-repeat 100% 0;
+    background-size: 42% auto,38% auto;
+    bottom: 0;
+    left: 0;
+    margin: 0 56px;
+    max-width: 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .banner{
+    color: #fff;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    .banner-text{
+      align-self: center;
+      margin: 0 auto 9rem;
+      max-width: 58rem;
+      text-align: center;
+      h1{
+        font-size: 3.43rem;
+        line-height: 5rem;
+        margin-bottom: 1.43rem;
+      }
+      p{
+        font-size: 1.14rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+.video-section{
+  min-height: 600px;
+  .video{
+    margin-bottom: 5rem;
+    margin-top: -9rem;
+    padding: 0 40px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    .video-box{
+      box-shadow: 0 0 40px 0 rgba(3,65,157,.11);
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    video{
+      display: block;
+      width: 100%;
+    }
+    .tab{
+      display: block;
+      margin-bottom: -1px;
+      width: 100%;
+    }
+  }
+}
+.image-content {
+  overflow: hidden;
+  position: relative;
+  img{
+    max-width:100%;
+  }
+  .minor-image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &.hide{
+    display: none;
+  }
+}
+
+.code-slick-container{
+  display: block;
+  flex: inherit;
+}
+.code-slick-dot{
+  margin-top: 4rem;
+  .slick-dots{
+    position: inherit;
+    text-align: left;
+    li{
+      &.slick-active{
+        button:before{
+          color: #76808e;
+        }
+      }
+      button{
+        margin: 0;
+      }
+      button:before{
+        color: #cbd0d9;
+        font-size: 16px;
+      }
+    }
+  }
+  &.mobile{
+    display: none;
+    .slick-dots{
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width:1112px) {
+  .video-section .video {
+    padding: 0 1.43rem
+  }
+
+  .layout .layout-content {
+    padding: 4rem 1rem
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .banner-section .banner .banner-text {
+    margin: 0 auto 3.43rem;
+    padding: 0 1.43rem
+  }
+
+  .banner-section .banner .banner-text h1 {
+    font-size: 2.14rem;
+    line-height: 3rem;
+    margin-bottom: 1.43rem
+  }
+
+  .banner-section .banner .banner-text p {
+    font-size: 1rem
+  }
+
+  .text-content {
+    margin-bottom: 1.43rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: inherit
+  }
+
+  .text-content h1 {
+    font-size: 2.14rem;
+    line-height: 3rem
+  }
+
+  .text-content p {
+    font-size: 1rem
+  }
+
+  .left-cell .text-content,.right-cell .text-content {
+    padding-left: 0;
+    padding-right: 0
+  }
+
+  .video-section {
+    height: inherit;
+    min-height: inherit
+  }
+
+  .app-section .text-content h1 {
+    font-size: 2.14rem;
+    line-height: 3rem
+  }
+
+  .code-slick-dot {
+    display: none
+  }
+
+  .code-slick-dot.mobile {
+    display: inherit
+  }
+
+  .layout .layout-content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    table-layout: inherit
+  }
+
+  .layout .layout-cell {
+    display: block;
+    order: 1;
+    table-layout: inherit
+  }
+
+  .layout .text-cell {
+    order: 0;
+    width: inherit
+  }
+}
+.fade-up{
+  transition: transform 1s linear;
+  transform: translateY(-50px);
+}
+

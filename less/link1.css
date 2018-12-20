@@ -1,0 +1,74 @@
+@charset "utf-8";
+.link1 {
+  background: #202d40;
+  height: 600px;
+  box-sizing: border-box;
+  position: relative;
+}
+.link1 a {
+  overflow: hidden;
+}
+.link1 a .left {
+  padding-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 55%;
+}
+.link1 a .left video {
+  float: right;
+  width: 552px;
+  height: 358px;
+}
+.link1 a .right {
+  font-size: 16px ;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translatey(-50%);
+  color: #fff;
+  padding: 60px;
+}
+.link1 a .right h1 {
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+  margin-bottom: 0.2em;
+}
+.link1 a .right p {
+  font-size: 1em;
+  line-height: 2em;
+}
+@media screen and (max-width: 1022px) {
+  .link1 a .left video {
+    width: 100%;
+  }
+  .link1 a .right {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .link1 a .left {
+    overflow: hidden;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    padding-left: 0px;
+    margin: 40px auto;
+  }
+  .link1 a .left video {
+    width: 90%;
+    float: none;
+    margin: 0px 5%;
+  }
+  .link1 a .right {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 460px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

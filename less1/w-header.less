@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import "variables.less";
+.y_logo {
+  background: url("../images/w-hearder.png") no-repeat;
+  background-size:80% ;
+  background-position: center;
+  height: 48px;
+  width: 260px;
+  padding-top: 10px;
+}
+
+
+.navbar {
+  width: 100%;
+  z-index: 999;
+  box-shadow: inset 0 -1px 0 0 #d8dee5;
+  position:fixed;
+  min-height: @navbar-height;
+  margin-bottom: 0px;
+  &:extend(.clearfix all);
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: @navbar-border-radius;
+  }
+
+}
+
+.navbar-default {
+  .navbar-nav > li > a{
+    color:#777;
+  }
+  .navbar-nav > li > a:hover,.navbar-nav > li > a:focus{
+    color: white;
+    background-color: #9FB6CD;
+  }
+
+}
+.navbar-right{
+  a{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top:3px;
+    text-decoration: none;
+    height:30px;
+    width:70px;
+    line-height: 30px;
+    border-radius:4px;
+  }
+  .btn1{
+  margin-left:-29px;
+    background-color: white;
+    border:1px solid #06f;
+    color: #06f;
+
+  }
+  .btn2{
+  
+   margin-left:-26px;
+    background-color: #06f;
+    border: 1px solid #06f;
+    color: white;
+  }
+}
+
+.navbar-form{
+  border: none;
+}
+
+.collapse,.navbar-collapse{
+  text-align: center;
+  background-color:white;
+}
+
+@media screen and(max-width: 764px){
+  .navbar-right a{
+    width:260px;
+  }
+}

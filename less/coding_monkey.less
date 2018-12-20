@@ -1,0 +1,222 @@
+@charset "utf-8";
+.coding_monkey{
+  height:600px;
+  background-color: #f7fcff;
+  box-sizing: border-box;
+  //border: 1px solid red;
+  color: #000;
+  .left{
+    width: 50%;
+    display: inline-block;
+    padding:  130px 20px 10px 12% ;
+    p{
+      font-size: 16px;
+      line-height:21px ;
+      margin-top: 20px ;
+      margin-bottom: 30px;
+     }
+    div{
+      button{
+        text-shadow: none;
+        display: inline-block;
+
+        border-radius: 2px;
+        width: 145px;
+        cursor: pointer;
+        height:48px ;
+        &:first-child{
+          border: 1px solid transparent;
+          background: #06f;
+          color: #fff;
+        }
+        &:last-child{
+          background:transparent;
+          border: 1px solid #06f;
+          border-radius: 2px;
+          color: #06f;
+          margin-left: 16px;
+        }
+    }
+
+
+      }
+
+  }
+@media  screen and(max-width: 1022px){
+.left{
+  padding:  150px 60px 10px 15px;
+  h1{
+    font-size: 34px;
+  }
+  p{
+    font-size: 14px;
+  }
+  div{
+    button{
+      width: 140px;
+    }
+  }
+
+}
+}
+ .right{
+
+   //border: 1px solid green ;
+    padding-left: 40px;
+   display: inline-block;
+   float: right;
+   position: relative;
+   width:50%;
+  .images{
+
+    margin-top:120px;
+    max-width: 400px;
+    width: 86%;
+    height: 380px;
+
+     position: absolute;
+
+    img:nth-of-type(1){
+    position: absolute;
+    top:0px;
+    left:0px;
+      width: 85%;
+      z-index: 2;
+
+  }
+    img:nth-of-type(2){
+      width: 30%;
+      float: right;
+    animation: move 4s ease-in-out alternate infinite;
+      z-index: 1;
+        }
+    @keyframes move {
+      0%{transform: translatey(0px)}
+      100%{
+        transform: translatey(90px)
+      }
+
+    }
+    img:nth-of-type(3){
+      position: absolute;
+      width: 15%;
+      top:5%;
+      right: 31.57%;
+      z-index: 3;
+
+
+    }
+    img:nth-of-type(4){
+      width: 4%;
+      position: absolute;
+      top:11%;
+      right: 33.15%;
+      z-index: 4;
+
+     transform-origin:top center ;
+      animation:rotate 2s ease-in-out alternate infinite ;
+    }
+    img:nth-of-type(5){
+      position: absolute;
+      width: 5%;
+      top:12.5%;
+      right: 38.5%;
+      z-index: 5;
+    }
+    img:nth-of-type(6){
+      position: absolute;
+      width:16% ;
+       top:49%;
+       right: 67%;
+      z-index: 6;
+    }
+    img:nth-of-type(7){
+      position: absolute;
+      width: 5%;
+      bottom:36%;
+      left:22%;
+      z-index: 7;
+
+    }
+    img:nth-of-type(8){
+      width: 5%;
+      position: absolute;
+      bottom:36%;
+      left: 17%;
+      z-index: 6;
+      transform-origin:top center ;
+      animation:rotate1 2s ease-in  alternate infinite  ;
+    }
+
+    @keyframes rotate {
+      0%{ transform:rotatez(0deg) }
+      100%{transform:rotatez(40deg)}
+    }
+    @keyframes rotate1 {
+      0%{ transform:rotatez(0deg) }
+      100%{transform:rotatez(-40deg)}
+    }
+   }
+
+
+ }
+}
+@media screen and(max-width:768px ) {
+  .coding_monkey {
+    .left {
+      width: 100%;
+      position: relative;
+      padding:30px 10px;
+      h1 {
+        padding-left: 10%;
+        width: 80%;
+        font-size: 30px;
+      }
+
+      p {
+        font-size:14px;
+        width: 100%;
+        max-width:480px;
+        margin: 0px auto;
+        position: relative;
+        top:280px;
+      }
+   div{
+     text-align: center;
+     margin: 0px auto;
+     button{
+       position: relative;
+       top:300px;
+       width:120px ;
+       height: 40px;
+       display: inline-block;
+
+     }
+   }
+
+    }
+    .right {
+      float: left;
+      width: 100%;
+      position: relative;
+      top: 0px;
+      left:0px;
+      padding-left: 0px;
+      padding-top: 0px;
+      right: 30%;
+      .images {
+        position: relative;
+        top:-160px;
+        height: 300px;
+        width: 50%;
+        max-width:280px;
+        min-width:240px ;
+        margin: 0px ;
+        left: 50%;
+        transform: translatex(-50%);
+        //background-color: blue;
+      }
+    }
+  }
+
+}

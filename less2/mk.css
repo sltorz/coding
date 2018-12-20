@@ -1,0 +1,91 @@
+@charset "utf-8";
+.mk {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  color: #000;
+  padding-right: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.mk .baozhu {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-left: 0.25rem;
+  text-align: center;
+}
+.mk .mk_head {
+  color: #000;
+  font-size: 0.3rem;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+.mk .mk_contain {
+  width: 3.2563rem;
+  height: 1.88rem;
+  float: left;
+  position: relative;
+  margin-top: 0.2rem;
+}
+.mk .mk_contain .mk_icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  background-size: 100% ;
+  margin: 0 auto;
+}
+.mk .mk_contain .mk_title {
+  height: 0.27rem;
+  width: 100%;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.18rem;
+  margin-bottom: 0.1rem;
+}
+.mk .mk_contain .mk_text {
+  height: 0.42rem;
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.14rem;
+  margin-bottom: 0.1rem;
+  color: #606c80;
+}
+.mk .icon1 {
+  background: url("../images/icon1.png") no-repeat;
+}
+.mk .icon2 {
+  background: url("../images/icon2.png") no-repeat;
+}
+.mk .icon3 {
+  background: url("../images/icon3.png") no-repeat;
+}
+.mk .icon4 {
+  background: url("../images/icon4.png") no-repeat;
+}
+.mk .icon5 {
+  background: url("../images/icon5.png") no-repeat;
+}
+.mk .icon6 {
+  background: url("../images/icon6.png") no-repeat;
+}
+.mk .icon7 {
+  background: url("../images/icon7.png") no-repeat;
+}
+.mk .icon8 {
+  background: url("../images/icon8.png") no-repeat;
+}
+.mk .icon9 {
+  background: url("../images/icon9.png") no-repeat;
+}
+.mk .icon10 {
+  background: url("../images/icon10.png") no-repeat;
+}
+.mk .icon11 {
+  background: url("../images/icon11.png") no-repeat;
+}
+.mk .icon12 {
+  background: url("../images/icon12.png") no-repeat;
+}

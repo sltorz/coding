@@ -1,0 +1,44 @@
+.t_main {
+  width: 100%;
+}
+.t_main .container {
+  width: 100%;
+}
+.t_main .container .t_left div {
+  background-color: #F2F4F6;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.16rem;
+  /* line-height: 0.35rem;*/
+  line-height: 3em;
+}
+.t_main .container .t_left .t3 a {
+  background-color: #2e6da4;
+}
+.t_main .container .t_right {
+  margin-top: 0.5rem;
+  font-size: 0.16rem;
+  line-height: 2.88em;
+  /*.t_l{
+    .panel-body{
+      font-size: 0.16rem;
+      line-height: 2.88em;
+    }
+
+  }
+  .t_r{
+    .notice{
+      .panel-body{
+        width: auto;
+        font-size: 0.16rem;
+        line-height: 2.88em;
+
+      }
+    }
+  }*/
+}
+.t_main .container .t_right .t_r .row .thumbnail img {
+  background-color: #2115E3;
+}

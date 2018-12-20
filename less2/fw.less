@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "variables.less";
+
+.fw{
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #202d40;
+  overflow: hidden;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 203px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+
+  .fw_left,.fw_right{
+    position: absolute;
+  }
+  .fw_left{
+    bottom: 0;
+    left: 0;
+    height: 176px;
+    width: 244px;
+    background: url("../images/left.png") no-repeat;
+    background-size:100%;
+  }
+  .fw_right{
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 150px;
+    background: url("../images/right.png") no-repeat;
+    background-size:100%;
+  }
+  .fw_text{
+    color: #fff;
+    font-size: 0.18rem;
+    margin: 48px 0 30px;
+    padding: 0 40px;
+  }
+  .fw_bd{
+    background-color: #06f;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    width: 224px;
+    text-decoration:none;
+  }
+}

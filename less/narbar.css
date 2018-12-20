@@ -1,0 +1,63 @@
+@charset "utf-8";
+.coding_nav .navbar-default {
+  border: 0px ;
+  z-index: 999;
+  background-color: white;
+  height: 50px;
+}
+.coding_nav .navbar-default .container-fluid {
+  height: 70px;
+}
+.coding_nav .navbar-default .container-fluid .navbar-header {
+  padding-top: 10px;
+  height: 70px;
+}
+.coding_nav .navbar-default .container-fluid .navbar-header .navbar-toggle {
+  border: 0px;
+}
+.coding_nav .navbar-default .container-fluid .navbar-brand {
+  padding: 5px;
+  height: 58px;
+}
+.coding_nav .navbar-default .container-fluid .navbar-brand img {
+  height: 40px;
+}
+.coding_nav .navbar-default .container-fluid .navbar-collapse {
+  background-color: white;
+  padding-top: 10px;
+  text-align: center;
+}
+.coding_nav .navbar-default .container-fluid .navbar-collapse .navbar-nav li {
+  height: 62px;
+  line-height: 63px;
+}
+.coding_nav .navbar-default .navbar-right {
+  border: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.coding_nav .navbar-default .navr .btn {
+  border: 0px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #06f;
+  color: white;
+  width: 104px;
+  height: 32px;
+}
+.coding_nav .navbar-default .navl .btn {
+  border: 0px;
+  border-radius: 4px;
+  outline: none;
+  width: 104px;
+  height: 32px;
+  background-color: #ebeff5;
+}
+@media screen and (max-width: 767px) {
+  .coding_nav .navbar-default .navr .btn {
+    width: 200px;
+  }
+  .coding_nav .navbar-default .navl .btn {
+    width: 200px;
+  }
+}
